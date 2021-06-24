@@ -3,4 +3,6 @@ services:
     web: 
         image: my_image
         container_name: test-cont
-        build: .
+        build: 
+            context: .
+            dockerfile: Dockerfile2
