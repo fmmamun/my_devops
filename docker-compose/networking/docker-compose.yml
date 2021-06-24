@@ -10,5 +10,7 @@ services:
         container_name: mysql
         networks: 
             - test_net
+        environment: 
+            - MYSQL_ROOT_PASSWORD=12345678
 networks: 
     test_net:
