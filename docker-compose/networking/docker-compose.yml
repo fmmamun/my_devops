@@ -5,6 +5,7 @@ services:
         container_name: nginx
         networks: 
             - test_net
+        tty: true
     db:
         image: mysql:5.7
         container_name: mysql
@@ -12,5 +13,6 @@ services:
             - test_net
         environment: 
             - MYSQL_ROOT_PASSWORD=12345678
+        tty: true
 networks: 
     test_net:
